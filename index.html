@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header class="header-fijo">
     <nav class="nav-principal">
@@ -14,39 +16,50 @@
         <a href="#inicio" class="logo-enlace">NEON<span>FEST</span></a>
       </div>
       <ul class="menu-navegacion">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#informacion">El Festival</a></li>
-        <li><a href="#artistas">Artistas</a></li>
-        <li><a href="#tickets">Tickets</a></li>
-        <li><a href="#ubicacion">Ubicación</a></li>
-        <li><a href="#tickets" class="btn-nav">Comprar Ahora</a></li>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">El Festival</a></li>
+        <li><a href="#">Artistas</a></li>
+        <li><a href="#">Tickets</a></li>
+        <li><a href="#">Ubicación</a></li>
+        <li><a href="#" class="btn-nav">Comprar Ahora</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="hero-seccion">
-    <div class="hero-contenedor">
-      <div class="hero-texto">
-        <p class="hero-subtitulo">14 Y 15 DE NOVIEMBRE · BUENOS AIRES</p>
-        <h1 class="hero-titulo">VIVE EL RITMO DE LA NUEVA GENERACIÓN</h1>
-        <p class="hero-descripcion">
-          El festival de música electrónica y urbana más esperado. Dos días con más de 30 artistas internacionales, escenarios inmersivos y una experiencia audiovisual 360°.
-        </p>
-        <div class="hero-botones">
-          <a href="#tickets" class="btn-custom">Adquirir Tickets</a>
-          <a href="#artistas" class="btn-secundario">Conocer Lineup</a>
-        </div>
-      </div>
+  <main>
+    <section class="hero-seccion" id="inicio">
+    <div class="hero-contenedor-personalizado">
+      <div class="hero-grilla-12">
+        <div class="hero-columna-contenido">
+          
 
-      <div class="hero-imagen-box">
-        <img 
-          src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=800&q=80" 
-          alt="Concierto masivo del festival con juego de luces láser y multitud eufórica" 
-          class="hero-img"
-        >
+          <h1 class="hero-titulo-principal">
+            Conseguí tu pase al precio oficial antes de que se agote la preventa.
+          </h1>
+
+          <p class="hero-descripcion-principal">
+            Evitá sobreprecios de reventa y filas virtuales. Dos días de festival con más de 30 artistas
+            internacionales, acceso ágil con pulsera inteligente y hasta 3 cuotas fijas.
+          </p>
+
+          <div class="hero-accion-unica">
+            <a href="#formulario-compra" class="hero-cta-solido">
+              Comprar entrada
+              <svg class="icono-flecha-cta" width="18" height="18" viewBox="0 0 20 20" fill="currentColor"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+
+       
+
+       
       </div>
     </div>
-  </main>
+    </section>
 
   <section class="seccion-info">
     <div class="container">
@@ -60,7 +73,8 @@
           <div class="info-caja">
             <h3>Sonido Inmersivo 360°</h3>
             <p>
-              Sistemas acústicos de última generación distribuidos estratégicamente para que sientas cada bajo con total fidelidad en todo el predio.
+              Sistemas acústicos de última generación distribuidos estratégicamente para que sientas cada bajo con total
+              fidelidad en todo el predio.
             </p>
           </div>
         </div>
@@ -69,7 +83,8 @@
           <div class="info-caja">
             <h3>3 Escenarios Temáticos</h3>
             <p>
-              Espacios diferenciados con géneros específicos: Escenario Principal EDM, Escenario Trap/Urbano y Carpa Electrónica Alternativa.
+              Espacios diferenciados con géneros específicos: Escenario Principal EDM, Escenario Trap/Urbano y Carpa
+              Electrónica Alternativa.
             </p>
           </div>
         </div>
@@ -78,7 +93,8 @@
           <div class="info-caja">
             <h3>Pulsera Cashless</h3>
             <p>
-              Acceso inteligente y pagos ágiles sin efectivo ni demoras. Recarga online previa y disfruta del evento sin preocupaciones.
+              Acceso inteligente y pagos ágiles sin efectivo ni demoras. Recarga online previa y disfruta del evento sin
+              preocupaciones.
             </p>
           </div>
         </div>
@@ -86,7 +102,7 @@
     </div>
   </section>
 
-  <aside class="seccion-artistas">
+  <section class="seccion-artistas">
     <div class="container">
       <div class="encabezado-seccion">
         <h2>LINEUP DE ARTISTAS DESTACADOS</h2>
@@ -96,15 +112,13 @@
       <div class="row">
         <div class="col-md-3">
           <article class="card tarjeta-artista">
-            <img 
-              src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=600&q=80" 
-              class="card-img-top" 
-              alt="DJ Nova Kane en vivo en cabina"
-            >
+            <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=600&q=80"
+              class="card-img-top" alt="DJ Nova Kane en vivo en cabina">
             <div class="card-body">
               <span class="genero-tag">Melodic Techno</span>
               <h3 class="card-title">NOVA KANE</h3>
-              <p class="card-text">Directo desde los clubes más vanguardistas de Europa con un live set sincronizado con láseres.</p>
+              <p class="card-text">Directo desde los clubes más vanguardistas de Europa con un live set sincronizado con
+                láseres.</p>
               <p class="horario-texto">Sábado 14 · 02:00 AM</p>
             </div>
           </article>
@@ -112,15 +126,13 @@
 
         <div class="col-md-3">
           <article class="card tarjeta-artista">
-            <img 
-              src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80" 
-              class="card-img-top" 
-              alt="Cantante Krypto en concierto"
-            >
+            <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80"
+              class="card-img-top" alt="Cantante Krypto en concierto">
             <div class="card-body">
               <span class="genero-tag">Trap &amp; Drill</span>
               <h3 class="card-title">KRYPTO</h3>
-              <p class="card-text">El líder del movimiento urbano con sus mayores hits globales y una impactante puesta visual.</p>
+              <p class="card-text">El líder del movimiento urbano con sus mayores hits globales y una impactante puesta
+                visual.</p>
               <p class="horario-texto">Domingo 15 · 00:30 AM</p>
             </div>
           </article>
@@ -128,15 +140,13 @@
 
         <div class="col-md-3">
           <article class="card tarjeta-artista">
-            <img 
-              src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=600&q=80" 
-              class="card-img-top" 
-              alt="Productora Solaris en sintetizadores modulares"
-            >
+            <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=600&q=80"
+              class="card-img-top" alt="Productora Solaris en sintetizadores modulares">
             <div class="card-body">
               <span class="genero-tag">Synth Pop &amp; Electro</span>
               <h3 class="card-title">SOLARIS</h3>
-              <p class="card-text">Atmósferas electrónicas y sintetizadores análogos que proponen una travesía sensorial única.</p>
+              <p class="card-text">Atmósferas electrónicas y sintetizadores análogos que proponen una travesía sensorial
+                única.</p>
               <p class="horario-texto">Sábado 14 · 22:30 PM</p>
             </div>
           </article>
@@ -144,22 +154,20 @@
 
         <div class="col-md-3">
           <article class="card tarjeta-artista">
-            <img 
-              src="https://images.unsplash.com/photo-1571266028243-3716f02d2d2e?auto=format&fit=crop&w=600&q=80" 
-              class="card-img-top" 
-              alt="Dúo Cyber Pulse en el escenario"
-            >
+            <img src="https://images.unsplash.com/photo-1571266028243-3716f02d2d2e?auto=format&fit=crop&w=600&q=80"
+              class="card-img-top" alt="Dúo Cyber Pulse en el escenario">
             <div class="card-body">
               <span class="genero-tag">Bass House</span>
               <h3 class="card-title">CYBER PULSE</h3>
-              <p class="card-text">Dúo internacional encargado del gran cierre de festival con shows de pirotecnia fría.</p>
+              <p class="card-text">Dúo internacional encargado del gran cierre de festival con shows de pirotecnia fría.
+              </p>
               <p class="horario-texto">Domingo 15 · 03:45 AM</p>
             </div>
           </article>
         </div>
       </div>
     </div>
-  </aside>
+  </section>
 
   <section class="seccion-tickets">
     <div class="container">
@@ -217,50 +225,27 @@
 
       <div class="formulario-caja">
         <h3 class="formulario-titulo">Formulario de Compra Oficial</h3>
-        <form method="post" action="#tickets">
+        <form method="post" action="#">
           <div class="row">
             <div class="col-md-6 campo-grupo">
               <label for="nombre">Nombre y Apellido *</label>
-              <input 
-                type="text" 
-                id="nombre" 
-                name="nombre" 
-                placeholder="Ingresa tu nombre completo" 
-                required 
-                maxlength="50"
-              >
+              <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required
+                maxlength="50">
             </div>
 
             <div class="col-md-6 campo-grupo">
               <label for="correo">Correo Electrónico *</label>
-              <input 
-                type="email" 
-                id="correo" 
-                name="correo" 
-                placeholder="correo@ejemplo.com" 
-                required
-              >
+              <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
             </div>
 
             <div class="col-md-6 campo-grupo">
               <label for="telefono">Teléfono de Contacto *</label>
-              <input 
-                type="tel" 
-                id="telefono" 
-                name="telefono" 
-                placeholder="Ej: 1123456789" 
-                required
-              >
+              <input type="tel" id="telefono" name="telefono" placeholder="Ej: 1123456789" required>
             </div>
 
             <div class="col-md-6 campo-grupo">
               <label for="fechaNac">Fecha de Nacimiento (+18) *</label>
-              <input 
-                type="date" 
-                id="fechaNac" 
-                name="fechaNac" 
-                required
-              >
+              <input type="date" id="fechaNac" name="fechaNac" required>
             </div>
 
             <div class="col-md-6 campo-grupo">
@@ -275,16 +260,7 @@
 
             <div class="col-md-6 campo-grupo">
               <label for="cantidad">Cantidad de Entradas (Máx. 4) *</label>
-              <input 
-                type="number" 
-                id="cantidad" 
-                name="cantidad" 
-                min="1" 
-                max="4" 
-                step="1" 
-                value="1" 
-                required
-              >
+              <input type="number" id="cantidad" name="cantidad" min="1" max="4" step="1" value="1" required>
             </div>
 
             <div class="col-12 campo-grupo">
@@ -301,7 +277,7 @@
 
             <div class="col-12 campo-grupo">
               <label class="checkbox-label">
-                <input type="checkbox" name="terminos" required> 
+                <input type="checkbox" name="terminos" required>
                 Acepto los términos, condiciones y la política de ingreso de mayores de 18 años.
               </label>
             </div>
@@ -323,17 +299,15 @@
         <p>Costanera Sur Park, Buenos Aires. Accesos ágiles y estacionamiento vigilado.</p>
       </div>
       <div class="mapa-contenedor">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13133.44754580005!2d-58.35824581284179!3d-34.619024099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d708fa838f%3A0x6431952f4c94473b!2sReserva%20Ecol%C3%B3gica%20Costanera%20Sur!5e0!3m2!1ses!2sar!4v1715000000000!5m2!1ses!2sar" 
-          width="100%" 
-          height="380" 
-          style="border:0;" 
-          loading="lazy" 
-          title="Mapa de ubicación de Neon Vibes Festival"
-        ></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13133.44754580005!2d-58.35824581284179!3d-34.619024099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d708fa838f%3A0x6431952f4c94473b!2sReserva%20Ecol%C3%B3gica%20Costanera%20Sur!5e0!3m2!1ses!2sar!4v1715000000000!5m2!1ses!2sar"
+          width="100%" height="380" style="border:0;" loading="lazy"
+          title="Mapa de ubicación de Neon Vibes Festival"></iframe>
       </div>
     </div>
   </section>
+
+  </main>
 
   <footer class="pie-pagina">
     <div class="container">
@@ -376,5 +350,143 @@
       </div>
     </div>
   </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const plans = {
+        general: {
+          tag: 'PASE ESTÁNDAR 2 DÍAS',
+          title: 'Pase General',
+          unitPrice: 45000,
+          perks: [
+            'Acceso para ambos días a los 3 escenarios del festival',
+            'Puntos de hidratación libre y puestos de carga de pulsera',
+            'Acceso al patio gastronómico y zonas de relax'
+          ],
+          percent: '85%',
+          hurry: 'Quedan 124 pases a este valor',
+          formValue: 'general'
+        },
+        vip: {
+          tag: 'EXPERIENCIA PREFERENCIAL',
+          title: 'VIP Comfort',
+          unitPrice: 85000,
+          perks: [
+            'Todos los beneficios del Pase General durante las 2 jornadas',
+            'Ingreso preferencial Fast Track por molinetes exclusivos',
+            'Tarima sobreelevada frente al Main Stage con sanitarios VIP',
+            'Barra de coctelería y atención preferencial sin filas'
+          ],
+          percent: '92%',
+          hurry: 'Últimos 48 pases en Preventa Fase 2',
+          formValue: 'vip'
+        },
+        black: {
+          tag: 'ALL ACCESS TOTAL',
+          title: 'Black Pass',
+          unitPrice: 150000,
+          perks: [
+            'Acceso total All Access a todas las zonas del predio',
+            'Ingreso exclusivo al Side-Stage del artista y lounge privado',
+            'Estacionamiento VIP vigilado y bebida de bienvenida',
+            'Kit oficial de merchandising edición limitada'
+          ],
+          percent: '97%',
+          hurry: 'Solo 12 pases disponibles',
+          formValue: 'black'
+        }
+      };
+
+      let currentPlan = 'general';
+      let currentQty = 1;
+
+      const tabBtns = document.querySelectorAll('.type-tab-btn');
+      const ticketTag = document.getElementById('ticketTag');
+      const ticketTitle = document.getElementById('ticketTitle');
+      const ticketPrice = document.getElementById('ticketPrice');
+      const ticketPerks = document.getElementById('ticketPerks');
+      const calcTotal = document.getElementById('calcTotal');
+      const qtyCount = document.getElementById('qtyCount');
+      const qtyMinus = document.getElementById('qtyMinus');
+      const qtyPlus = document.getElementById('qtyPlus');
+      const availLabel = document.getElementById('availLabel');
+      const availHurry = document.getElementById('availHurry');
+      const availBar = document.getElementById('availBar');
+      const btnSelectPass = document.getElementById('btnSelectPass');
+
+      function formatMoney(num) {
+        return '$' + num.toLocaleString('es-AR');
+      }
+
+      function updateUI() {
+        const p = plans[currentPlan];
+        if (!p) return;
+
+        if (ticketTag) ticketTag.textContent = p.tag;
+        if (ticketTitle) ticketTitle.textContent = p.title;
+        if (ticketPrice) ticketPrice.textContent = formatMoney(p.unitPrice);
+
+        if (ticketPerks) {
+          ticketPerks.innerHTML = p.perks.map(perk => `<li><span class="icono-check">✓</span> ${perk}</li>`).join('');
+        }
+
+        if (calcTotal) {
+          calcTotal.textContent = formatMoney(p.unitPrice * currentQty) + ' ARS';
+        }
+
+        if (qtyCount) qtyCount.textContent = currentQty;
+        if (availLabel) availLabel.textContent = `Cupos en preventa: ${p.percent} vendidos`;
+        if (availHurry) availHurry.textContent = p.hurry;
+        if (availBar) availBar.style.width = p.percent;
+      }
+
+      tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          tabBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentPlan = btn.getAttribute('data-type');
+          updateUI();
+        });
+      });
+
+      if (qtyMinus) {
+        qtyMinus.addEventListener('click', () => {
+          if (currentQty > 1) {
+            currentQty--;
+            updateUI();
+          }
+        });
+      }
+
+      if (qtyPlus) {
+        qtyPlus.addEventListener('click', () => {
+          if (currentQty < 4) {
+            currentQty++;
+            updateUI();
+          }
+        });
+      }
+
+      if (btnSelectPass) {
+        btnSelectPass.addEventListener('click', () => {
+          const formSelect = document.getElementById('tipoEntrada');
+          const qtyInput = document.getElementById('cantidad');
+          const targetForm = document.getElementById('formulario-compra');
+
+          if (formSelect) formSelect.value = plans[currentPlan].formValue;
+          if (qtyInput) qtyInput.value = currentQty;
+
+          if (targetForm) {
+            targetForm.scrollIntoView({ behavior: 'smooth' });
+          } else {
+            const formBox = document.querySelector('.formulario-caja');
+            if (formBox) formBox.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      }
+
+      updateUI();
+    });
+  </script>
 </body>
+
 </html>
