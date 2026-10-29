@@ -54,7 +54,7 @@ img {
   }
 }
 
-.header {
+header {
   background: rgba(15, 17, 23, 0.96);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding: 2% 0;
@@ -63,7 +63,7 @@ img {
   z-index: 10;
 }
 
-.header nav {
+header nav {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -84,7 +84,7 @@ img {
   text-shadow: 0 0 10px #ffb703;
 }
 
-.header nav ul {
+header nav ul {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -92,7 +92,7 @@ img {
   justify-content: flex-end;
 }
 
-.header nav ul a {
+header nav ul a {
   color: #cfd3dc;
   font-size: 14px;
   font-weight: bold;
@@ -113,10 +113,11 @@ img {
   align-items: center;
   animation: aparecer 0.8s ease-out both;
   background: linear-gradient(90deg, rgba(10, 12, 16, 0.92), rgba(10, 12, 16, 0.4)),
-    url("img/fondo.jfif") center / cover;
+    url("img/fondo.jfif") center;
   border-bottom: 1px solid #1a202c;
   display: flex;
   min-height: 650px;
+  padding: 0;
 }
 
 .contenedor-centro {
@@ -126,7 +127,7 @@ img {
   width: 100%;
 }
 
-  
+
 
 .centro h1 {
   color: #f2f7ff;
@@ -175,7 +176,6 @@ img {
   display: inline-flex;
   font-weight: bold;
   padding: 12px 24px;
-  transition: background 0.2s, border-color 0.2s;
 }
 
 .boton-secundario:hover {
@@ -185,20 +185,16 @@ img {
 
 
 
-.centro svg {
-  transition: transform 0.2s;
-}
 
 
-.seccion,
-.seccion-alterna {
+
+section {
   background: #0a0c10;
   padding: 6% 0;
 }
 
 .seccion-alterna {
   background: #0f1117;
-  padding: 6% 0;
 }
 
 .titulo-seccion {
@@ -228,15 +224,11 @@ img {
   padding: 30px 24px;
 }
 
-.retardo-1 .bloque,
-.retardo-1 article,
-.retardo-1 .tarjeta-precio {
+.retardo-1 article {
   animation-delay: 0.12s;
 }
 
-.retardo-2 .bloque,
-.retardo-2 article,
-.retardo-2 .tarjeta-precio {
+.retardo-2 article {
   animation-delay: 0.24s;
 }
 
@@ -267,7 +259,6 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   height: 100%;
-  overflow: hidden;
 }
 
 .seccion-alterna article .card-img-top {
@@ -291,12 +282,8 @@ img {
 
 .card-title {
   color: #ffffff;
-  font-weight: bold;
-  margin-bottom: 2%;
-}
-
-.seccion-alterna article .card-title {
   font-size: 20px;
+  font-weight: bold;
   margin-bottom: 2%;
 }
 
@@ -427,7 +414,6 @@ img {
 
 .entrada-radio,
 .entrada-check {
-  accent-color: #ffb703;
   flex: 0 0 auto;
   width: auto;
 }
@@ -481,7 +467,6 @@ img {
 .contenedor-mapa {
   border: 1px solid #ffb703;
   border-radius: 10px;
-  overflow: hidden;
 }
 
 .contenedor-mapa iframe {
@@ -546,26 +531,25 @@ footer ul a {
 }
 
 @media (max-width: 650px) {
-  .header {
+  header {
     position: static;
   }
 
-  .header nav {
+  header nav {
     align-items: flex-start;
     flex-direction: column;
     gap: 12px;
   }
 
-  .header nav ul {
-    flex-wrap: nowrap;
+  header nav ul {
+    flex-wrap: wrap;
     gap: 8px;
     justify-content: flex-start;
     max-width: 100%;
-    overflow-x: auto;
     width: 100%;
   }
 
-  .header nav ul a {
+  header nav ul a {
     font-size: 13px;
     padding: 1% 1%;
   }
@@ -575,10 +559,10 @@ footer ul a {
   }
 
   .contenedor-centro {
+    max-width: 100%;
     padding: 7% 4%;
   }
 
-  .contenedor-centro,
   .centro p,
   .titulo-seccion {
     max-width: 100%;
