@@ -6,7 +6,7 @@
 
 
 body {
-  background-color: #0d0e1a;
+  background-color: #0f1117;
   color: #ffffff;
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -42,20 +42,20 @@ img {
 
 @keyframes pulso {
   0% {
-    box-shadow: 0 0 10px rgba(255, 0, 128, 0.4);
+    box-shadow: 0 0 10px rgba(255, 90, 31, 0.4);
   }
 
   50% {
-    box-shadow: 0 0 25px rgba(0, 245, 212, 0.8);
+    box-shadow: 0 0 25px rgba(255, 183, 3, 0.7);
   }
 
   100% {
-    box-shadow: 0 0 10px rgba(255, 0, 128, 0.4);
+    box-shadow: 0 0 10px rgba(255, 90, 31, 0.4);
   }
 }
 
 .header {
-  background: rgba(13, 14, 26, 0.96);
+  background: rgba(15, 17, 23, 0.96);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding: 2% 0;
   position: sticky;
@@ -80,8 +80,8 @@ img {
 }
 
 .header nav div span {
-  color: #00f5d4;
-  text-shadow: 0 0 10px #00f5d4;
+  color: #ffb703;
+  text-shadow: 0 0 10px #ffb703;
 }
 
 footer .columna-footer div a {
@@ -92,8 +92,8 @@ footer .columna-footer div a {
 }
 
 footer .columna-footer div span {
-  color: #00f5d4;
-  text-shadow: 0 0 10px #00f5d4;
+  color: #ffb703;
+  text-shadow: 0 0 10px #ffb703;
 }
 
 .header nav ul {
@@ -115,7 +115,7 @@ footer .columna-footer div span {
 
 
 .boton-nav {
-  background: #ff0080;
+  background: #ff5a1f;
   border-radius: 6px;
   color: #ffffff !important;
   padding: 3% 4% !important;
@@ -124,7 +124,7 @@ footer .columna-footer div span {
 .centro {
   align-items: center;
   animation: aparecer 0.8s ease-out both;
-  background: linear-gradient(90deg, rgba(7, 8, 18, 0.9), rgba(7, 8, 18, 0.35)),
+  background: linear-gradient(90deg, rgba(10, 12, 16, 0.92), rgba(10, 12, 16, 0.4)),
     url("img/fondo.jfif") center / cover;
   border-bottom: 1px solid #1a202c;
   display: flex;
@@ -146,36 +146,75 @@ footer .columna-footer div span {
   text-align: left;
 }
 
+.subtitulo-hero {
+  background: rgba(255, 90, 31, 0.15);
+  border: 1px solid rgba(255, 90, 31, 0.35);
+  border-radius: 20px;
+  color: #ffb703;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  margin-bottom: 16px;
+  padding: 6px 14px;
+}
+
 .centro h1 {
   color: #f2f7ff;
-  font-size: 42px;
-  font-weight: bold;
+  font-size: 46px;
+  font-weight: 800;
   line-height: 1.15;
-  margin-bottom: 3%;
+  margin-bottom: 16px;
 }
 
 .centro p {
-  border-left: 3px solid #ff0080;
+  border-left: 3px solid #ff5a1f;
   color: #d4e2f3;
-  margin-bottom: 4%;
-  max-width: 52%;
-  padding-left: 2%;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  max-width: 95%;
+  padding-left: 14px;
 }
 
-.centro div div div div {
-  margin-bottom: 0;
+.contenedor-boton {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 20px;
 }
 
 .boton-principal {
+  align-items: center;
   animation: pulso 3s ease-in-out infinite;
-  background: #ff0080;
-  border: 1px solid #ff0080;
+  background: #ff5a1f;
+  border: 1px solid #ff5a1f;
   border-radius: 6px;
   color: #ffffff;
   display: inline-flex;
+  font-weight: bold;
   gap: 10px;
-  padding: 2% 2%;
+  padding: 12px 26px;
 }
+
+.boton-secundario-hero {
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 6px;
+  color: #ffffff;
+  display: inline-flex;
+  font-weight: bold;
+  padding: 12px 24px;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.boton-secundario-hero:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+}
+
+
 
 .centro svg {
   transition: transform 0.2s;
@@ -184,12 +223,12 @@ footer .columna-footer div span {
 
 .seccion,
 .seccion-alterna {
-  background: #080911;
+  background: #0a0c10;
   padding: 6% 0;
 }
 
 .seccion-alterna {
-  background: #0d0e1a;
+  background: #0f1117;
   padding: 6% 0;
 }
 
@@ -213,10 +252,11 @@ footer .columna-footer div span {
 
 .bloque {
   animation: aparecer 0.7s ease-out both;
-  background: #141628;
+  background: #181b24;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
   height: 100%;
-  padding: 3% 3%;
+  padding: 30px 24px;
 }
 
 .retardo-1 .bloque,
@@ -240,7 +280,7 @@ footer .columna-footer div span {
 }
 
 .bloque h3 {
-  color: #00f5d4;
+  color: #ffb703;
   font-size: 20px;
   margin-bottom: 3%;
 }
@@ -254,9 +294,9 @@ footer .columna-footer div span {
 
 .seccion-alterna article {
   animation: aparecer 0.7s ease-out both;
-  background: #141628;
+  background: #181b24;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 0;
+  border-radius: 10px;
   height: 100%;
   overflow: hidden;
 }
@@ -272,7 +312,7 @@ footer .columna-footer div span {
 }
 
 .seccion-alterna article span {
-  color: #ff0080;
+  color: #ff5a1f;
   display: block;
   font-size: 11px;
   font-weight: bold;
@@ -291,7 +331,7 @@ footer .columna-footer div span {
 
 .horario {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  color: #00f5d4;
+  color: #ffb703;
   font-size: 12px;
   font-weight: bold;
   margin: 2% 0 0;
@@ -300,23 +340,24 @@ footer .columna-footer div span {
 
 .tarjeta-precio {
   animation: aparecer 0.7s ease-out both;
-  background: #141628;
+  background: #181b24;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
   height: 100%;
-  padding: 3% 3%;
-  padding-bottom: 8%;
+  padding: 50px 32px 42px;
   position: relative;
   text-align: center;
 }
 
 .destacada {
-  border: 2px solid #ff0080;
+  border: 2px solid #ff5a1f;
 }
 
 .distintivo {
-  background: #ff0080;
+  background: #ff5a1f;
+  border-radius: 4px;
   font-size: 11px;
-  padding: 1% 2%;
+  padding: 3px 10px;
   position: absolute;
   right: 18px;
   text-transform: uppercase;
@@ -325,14 +366,14 @@ footer .columna-footer div span {
 
 .tarjeta-precio h3 {
   font-size: 22px;
-  margin-bottom: 3%;
+  margin-bottom: 4%;
 }
 
 .tarjeta-precio p {
-  color: #00f5d4;
+  color: #ffb703;
   font-size: 38px;
   font-weight: bold;
-  margin-bottom: 3%;
+  margin-bottom: 6%;
 }
 
 .tarjeta-precio p span {
@@ -342,7 +383,7 @@ footer .columna-footer div span {
 
 .tarjeta-precio ul {
   list-style: disc;
-  margin-bottom: 4%;
+  margin: 6% 0 10%;
   padding-left: 8%;
   text-align: left;
 }
@@ -351,37 +392,32 @@ footer .columna-footer div span {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   color: #cfd3dc;
   font-size: 14px;
-  padding: 1% 0;
+  padding: 9px 0;
 }
 
 .boton-accion,
 .boton-borde {
-  padding: 2% 2%;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: bold;
+  padding: 12px 28px;
 }
 
 .boton-accion {
-  background: #ff0080;
-  border: 1px solid #ff0080;
+  background: #ff5a1f;
+  border: 1px solid #ff5a1f;
   color: #ffffff;
 }
 
 .boton-borde {
   background: transparent;
-  border: 1px solid #00f5d4;
-  color: #00f5d4;
-}
-
-.boton-accion {
-  color: #ffffff;
-}
-
-.boton-borde {
-  color: #00f5d4;
+  border: 1px solid #ffb703;
+  color: #ffb703;
 }
 
 .caja-formulario {
   animation: aparecer 0.8s ease-out both;
-  background: #141628;
+  background: #181b24;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   margin: 4% auto 0;
@@ -411,20 +447,16 @@ footer .columna-footer div span {
   background: #090a12;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 4px;
+  box-shadow: none;
   color: #ffffff;
+  outline: none;
   padding: 2% 2%;
   width: 100%;
 }
 
-.control-campo {
-  border-color: rgba(255, 255, 255, 0.1);
-  box-shadow: none;
-  outline: none;
-}
-
 .entrada-radio,
 .entrada-check {
-  accent-color: #00f5d4;
+  accent-color: #ffb703;
   flex: 0 0 auto;
   width: auto;
 }
@@ -476,7 +508,8 @@ footer .columna-footer div span {
 }
 
 .contenedor-mapa {
-  border: 1px solid #00f5d4;
+  border: 1px solid #ffb703;
+  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -488,7 +521,7 @@ footer .columna-footer div span {
 }
 
 footer {
-  background: #05050a;
+  background: #07080b;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: 5% 2% 2%;
 }
@@ -525,7 +558,7 @@ footer ul a {
 }
 
 .redes a {
-  color: #00f5d4;
+  color: #ffb703;
 }
 
 .derechos {
@@ -541,28 +574,7 @@ footer ul a {
   margin: 0;
 }
 
-@media screen and (max-width: 992px) {
-  .centro h1 {
-    font-size: 36px;
-  }
-
-  .header nav {
-    gap: 12px;
-  }
-}
-
-@media (max-width: 850px) {
-  .header nav ul {
-    gap: 8px;
-  }
-
-  .header nav ul a {
-    font-size: 13px;
-    padding: 1% 1%;
-  }
-}
-
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .header {
     position: static;
   }
@@ -575,10 +587,16 @@ footer ul a {
 
   .header nav ul {
     flex-wrap: nowrap;
+    gap: 8px;
     justify-content: flex-start;
     max-width: 100%;
     overflow-x: auto;
     width: 100%;
+  }
+
+  .header nav ul a {
+    font-size: 13px;
+    padding: 1% 1%;
   }
 
   .centro {
@@ -610,8 +628,18 @@ footer ul a {
     flex-direction: column;
   }
 
+  .contenedor-boton {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .boton-principal,
+  .boton-secundario-hero,
   .boton-accion,
+  .boton-borde,
   .boton-reset {
+    justify-content: center;
+    text-align: center;
     width: 100%;
   }
 }
