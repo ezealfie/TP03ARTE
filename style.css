@@ -72,26 +72,14 @@ img {
   padding: 0 2%;
 }
 
-.header nav div a {
+.logo {
   color: #ffffff;
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 2px;
 }
 
-.header nav div span {
-  color: #ffb703;
-  text-shadow: 0 0 10px #ffb703;
-}
-
-footer .columna-footer div a {
-  color: #ffffff;
-  font-size: 24px;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-footer .columna-footer div span {
+.logo span {
   color: #ffb703;
   text-shadow: 0 0 10px #ffb703;
 }
@@ -132,32 +120,13 @@ footer .columna-footer div span {
 }
 
 .contenedor-centro {
-  margin: 0 auto;
-  max-width: 100%;
+  max-width: 620px;
   padding: 7% 2%;
+  text-align: left;
   width: 100%;
 }
 
-.grilla-centro {
-  max-width: 55%;
-}
-
-.grilla-centro div {
-  text-align: left;
-}
-
-.subtitulo-hero {
-  background: rgba(255, 90, 31, 0.15);
-  border: 1px solid rgba(255, 90, 31, 0.35);
-  border-radius: 20px;
-  color: #ffb703;
-  display: inline-block;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: 1.2px;
-  margin-bottom: 16px;
-  padding: 6px 14px;
-}
+  
 
 .centro h1 {
   color: #f2f7ff;
@@ -198,7 +167,7 @@ footer .columna-footer div span {
   padding: 12px 26px;
 }
 
-.boton-secundario-hero {
+.boton-secundario {
   align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 6px;
@@ -209,7 +178,7 @@ footer .columna-footer div span {
   transition: background 0.2s, border-color 0.2s;
 }
 
-.boton-secundario-hero:hover {
+.boton-secundario:hover {
   background: rgba(255, 255, 255, 0.1);
   border-color: #ffffff;
 }
@@ -319,11 +288,13 @@ footer .columna-footer div span {
   margin-bottom: 2%;
   text-transform: uppercase;
 }
+
 .card-title {
   color: #ffffff;
   font-weight: bold;
   margin-bottom: 2%;
 }
+
 .seccion-alterna article .card-title {
   font-size: 20px;
   margin-bottom: 2%;
@@ -607,7 +578,7 @@ footer ul a {
     padding: 7% 4%;
   }
 
-  .grilla-centro,
+  .contenedor-centro,
   .centro p,
   .titulo-seccion {
     max-width: 100%;
@@ -634,7 +605,7 @@ footer ul a {
   }
 
   .boton-principal,
-  .boton-secundario-hero,
+  .boton-secundario,
   .boton-accion,
   .boton-borde,
   .boton-reset {
